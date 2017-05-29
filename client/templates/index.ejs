@@ -1,13 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-    <meta name="description" content="">
-    <meta name="author" content="">
-    <link rel="icon" href="../../favicon.ico">
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+  <meta name="description" content="">
+  <meta name="author" content="">
+  <link rel="icon" href="../../favicon.ico">
+
+  <title>Name List</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+    crossorigin="anonymous">
+  <!-- Bootstrap core CSS -->
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" rel="stylesheet">
 
     <title>Narrow Jumbotron Template for Bootstrap</title>
 
@@ -16,13 +22,10 @@
 
     <!-- Custom styles for this template -->
     <link href="../style/jumbotron-narrow.css" rel="stylesheet">
+	  <script src="https://code.jquery.com/jquery-3.2.1.js" integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE=" crossorigin="anonymous"></script>
+    <script src="../js/main.js"></script>
     
-
-    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
-    <!--[if lt IE 9]>
-      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
-      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-    <![endif]-->
+    
   </head>
 
   <body>
@@ -34,15 +37,13 @@
       </div>
 
       <div class="jumbotron">
-        <form class="nameinput">
-          <input type="text" placeholder="New name">
-          <a class="btn-sm btn-primary" href="#" role="button">Add name</a>
-        </form>
-        <ul class="list-group">
-          <li class="list-group-item">Name 1</li>
-          <li class="list-group-item">Name 2</li>
-          <li class="list-group-item">Name 3</li>
-        </ul>
+          <form id="nameinput">
+            <input type="text" placeholder="New name" id="name">
+            <input class="btn-sm btn-primary" type="submit" value="Add Name">
+          </form>
+          <ul class="list-group">
+
+          </ul>
       </div>
 
       <div class="row marketing">
@@ -56,13 +57,10 @@
       </div>
 
       <footer class="footer">
-        <p>&copy; 2016 Company, Inc.</p>
+        <p>&copy; Zach and Dan, Inc.</p>
       </footer>
 
     </div> <!-- /container -->
 
-
-    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
-    <script src="../../assets/js/ie10-viewport-bug-workaround.js"></script>
   </body>
 </html>
